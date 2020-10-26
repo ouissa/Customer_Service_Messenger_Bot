@@ -229,7 +229,7 @@ The response will include an array called data that includes all the products th
 
 Now our function for asking_for_price inmtent is ready, here is how it looks in the chat:
 
-SCREENSHOT HERE: please include this question: what is the price of a Facebok t-shirt (dont add any color)
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/message%20(2).png?raw=true)
 
 Sometimes, we will need to combine multiple rules, for example in the case of asking for the availability of a product, a customer might ask about a t-shirt that has a specific price for a specific gender. In this case, we want to have multiple rules grouped together. Luckily, we have  the “or” and ”and” operators. So for this specific case, we will have to select all the products that have the price AND the gender asked by the user. 
 
