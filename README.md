@@ -5,7 +5,7 @@ In this tutorial, we will create a Messenger bot for a company that sells T-shir
 ### Pre-requites:
 
   - You have a Facebook catalog for your products linked to a Facebook business account.
-  - You have basic knowledge of NodeJS.
+  -  You have basic knowledge of NodeJS.
   - You have an E-commerce platform.
 
 
@@ -17,10 +17,13 @@ Wit.ai training process depends on three key elements:
 
 - **Utterances**: the questions or the statements that a user usually asks. Utterances represent the user's end. It can be an action that a user wants to do, or a piece of information that the user wants to know. 
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/utterances_eng.png?raw=true)
 - **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/intents_eng.png?raw=true)
 - **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/entities_eng.png?raw=true)
 ### What is the Facebook Marketing API
 
  The **Facebook Marketing API** is an HTTP-based API that you can use to programmatically query data, create and manage ads, and perform a wide variety of other tasks. 
@@ -32,11 +35,14 @@ To use the Marketing API, you should have basic knowledge of the Facebook Grah A
 ### Getting Started: Creating a wit.ai App: 
 
 Before we can train the bot, we need to create a new Wit.ai app that will represent the natural language processing part of the project. 
+  1. Go to https://wit.ai/ and login with Facebook or GitHub.
 
-    1. Go to https://wit.ai/ and login with Facebook or GitHub. 
-    2. Click the new "app" button at the top right corner of the screen. 
-           3. Choose a name for your app and also the language you will use to train the bot. 
-                  4. Click "create".
+  ![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/wit.png?raw=true)
+  2. Click the new "app" button at the top right corner of the screen. 
+        3. Choose a name for your app and also the language you will use to train the bot. 
+            4. Click "create".
+
+   ![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/create_app.png?raw=true)
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
 
@@ -46,6 +52,7 @@ To train the bot we need to get it familiarized with the questions that users mi
 
 Under "understanding", we can type the questions that users might ask in the text area that says type your utterance. To specify the intent for the question, you can add it in the intent text area under utterance. Note that after training the bot with some questions, the intent area will be filled automatically. Therefore, you need to check if the prediction made by Wit.ai is correct. Under the "intent" attribute, you can find the list of entities. To add an entity to the list you need to highlight the keyword that expresses the entity and either select the appropriate entity from the list of entities previously created or add one if it does not exist. As intents, along the way entities will be detected automatically by Wit.ai. After finishing these steps, you can click on "train" and "validate". 
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/main_eng.png?raw=true)
 In this tutorial, we will introduce the case of a t-shirts company that wants to create a chatbot to provide the best support for its customers. 
 
 The bot in this tutorial will deal with three intents that the customer might include in her question. 
@@ -86,8 +93,7 @@ For this intent we can have questions similar to the following:
 
 -  What is the price of a blue Facebook t-shirt? (**Entities**: asking_price: “what is the price”, t-shirt_title: “blue Facebook t-shirt”). 
 
--  How much a blue Facebook t-shirt cost? (**Entities**: asking_price: “how much”, t-shirt_title: “blue Facebook t-shirt” 
-
+- How much a blue Facebook t-shirt cost? (**Entities**: asking_price: “how much”, t-shirt_title: “blue Facebook t-shirt” 
 #### Asking for methods of payment: 
 
 For this intent we can have question similar to the following: 
@@ -129,7 +135,6 @@ As you may have noticed, the function **responseFromWit(data)**, takes the data 
 ```javascript
  const intent = (data.intents.length > 0 && data.intents[0]) || "__foo__";
 ```
-
 Then we use "switch" to call the appropriate function for the detected intent. In case no intent is detected, we have a function called **handleGibberish()** that takes care of that. In this function, we can for example render the most sold items.
 
 Summing up, here is what **responseFromWit(data)** for the intents we had so far:
@@ -164,7 +169,6 @@ For this intent, we need to take a name of an item, a t-shirt in our simple cata
 async function askingForPrice(data) {
   const shirt_title = data.entities["t-shirt_title:t-shirt_title"];
 ```
-
 Now that we can get the value we are interested in, all is left is using that value in order to render the right products, and here is where the Facebook Marketing API (specifically the products edge) comes to play. Visit the [Facebook documentation](https://developers.facebook.com/docs/marketing-api/reference/product-catalog/products/) for more details. 
 
 To use the API, we need 2 things: 
@@ -192,8 +196,7 @@ filter: {
     } 
 }
 ```
-
-For the asking_for_price intent, we can have the following request: 
+For the asking_for_availability intent, we can have the following request: 
 
 ```javascript
 if(price != null && shirt_title != null){
@@ -210,9 +213,7 @@ if(price != null && shirt_title != null){
   })
  }
 ```
-
 The response will include an array called data that includes all the products that satisfy the condition: 
-
 ```json
   "data": [
     {
@@ -224,7 +225,7 @@ The response will include an array called data that includes all the products th
 }
 ```
 
-Now our function for asking_for_price intent is ready, here is how it looks in the chat:
+Now our function for asking_for_price inmtent is ready, here is how it looks in the chat:
 
 SCREENSHOT HERE: please include this question: what is the price of a Facebok t-shirt (dont add any color)
 
@@ -260,8 +261,6 @@ Here is the request that we will send in the case of asking for availability:
       );
 ```
 
-For the rest, it is pretty much the same, and it depends on the purposes of the application you have, but what you have seen so far is enough to get you started. 
-
 ### Next Steps
 
 What we have built was a simple application that only answers some intents with limited choices. We can add other features like:
@@ -283,5 +282,3 @@ What we have built was a simple application that only answers some intents with 
 
 License
 ----
-
-MIT
