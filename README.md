@@ -17,10 +17,13 @@ Wit.ai training process depends on three key elements:
 
 - **Utterances**: the questions or the statements that a user usually asks. Utterances represent the user's end. It can be an action that a user wants to do, or a piece of information that the user wants to know. 
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/utterances_eng.png?raw=true)
 - **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/intents_eng.png?raw=true)
 - **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/entities_eng.png?raw=true)
 ### What is the Facebook Marketing API
 
  The **Facebook Marketing API** is an HTTP-based API that you can use to programmatically query data, create and manage ads, and perform a wide variety of other tasks. 
@@ -32,10 +35,14 @@ To use the Marketing API, you should have basic knowledge of the Facebook Grah A
 ### Getting Started: Creating a wit.ai App: 
 
 Before we can train the bot, we need to create a new Wit.ai app that will represent the natural language processing part of the project. 
-  1. Go to https://wit.ai/ and login with Facebook or GitHub. 
+  1. Go to https://wit.ai/ and login with Facebook or GitHub.
+  
+  ![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/wit.png?raw=true)
   2. Click the new "app" button at the top right corner of the screen. 
     3. Choose a name for your app and also the language you will use to train the bot. 
     4. Click "create".
+    
+   ![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/create_app.png?raw=true)
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
 
@@ -45,6 +52,7 @@ To train the bot we need to get it familiarized with the questions that users mi
 
 Under "understanding", we can type the questions that users might ask in the text area that says type your utterance. To specify the intent for the question, you can add it in the intent text area under utterance. Note that after training the bot with some questions, the intent area will be filled automatically. Therefore, you need to check if the prediction made by Wit.ai is correct. Under the "intent" attribute, you can find the list of entities. To add an entity to the list you need to highlight the keyword that expresses the entity and either select the appropriate entity from the list of entities previously created or add one if it does not exist. As intents, along the way entities will be detected automatically by Wit.ai. After finishing these steps, you can click on "train" and "validate". 
 
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/main_eng.png?raw=true)
 In this tutorial, we will introduce the case of a t-shirts company that wants to create a chatbot to provide the best support for its customers. 
 
 The bot in this tutorial will deal with three intents that the customer might include in her question. 
