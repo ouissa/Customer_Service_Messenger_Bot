@@ -1,15 +1,24 @@
 # Crete a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API
-### Authors: Mohamed Moumou & Ouissal Moumou
+### Authors: Mohamed Moumou & Ouissal Moumou<br>
 
 In this tutorial, we will create a Messenger bot for a company that sells T-shirts. The bot answers customers’ questions about the available products, the sizes, colors, and prices.  To do that, The bot relies on the company's Facebook catalog. 
 
 ### Table of contents:
-[What is the Facebook Marketing API](#What-is-the-Facebook-Marketing-API)
+  - [Pre-requites](Pre-requites)
+  - [What is wit.ai and how does it Work](#What-is-wit.ai-and-how-does-it-Work)
+  - [What is the Facebook Marketing API](#What-is-the-Facebook-Marketing-API)
+  - [Getting Started: Creating a wit.ai App](#Getting-Started:-Creating-a-wit.ai-App)
+  - [Training the bot](#Training-the-bot)
+  - [Response of The Bot](#Response-of-The-Bot)
+  - [Linking Messenger to the wit.ai app](#Linking-Messenger-to-the-wit.ai-app)
+  - [Handling intents](#Handling-intents)
+  - [Next Steps](#Next-Steps)
+  - [Resources](#Resources)
 
-### Pre-requites:
+### Pre-requites
 
   - You have a Facebook catalog for your products linked to a Facebook business account.
-  -  You have basic knowledge of NodeJS.
+  - You have basic knowledge of NodeJS.
   - You have an E-commerce platform.
 
 
@@ -36,7 +45,7 @@ Wit.ai training process depends on three key elements:
 
 To use the Marketing API, you should have basic knowledge of the Facebook Grah API and how it works. You can find that [here](https://developers.facebook.com/docs/graph-api/).
 
-### Getting Started: Creating a wit.ai App: 
+### Getting Started: Creating a wit.ai App
 
 Before we can train the bot, we need to create a new Wit.ai app that will represent the natural language processing part of the project. 
   1. Go to https://wit.ai/ and login with Facebook or GitHub.
@@ -50,7 +59,7 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
 
-### Training the bot: 
+### Training the bot
 
 To train the bot we need to get it familiarized with the questions that users might ask. 
 
@@ -126,9 +135,11 @@ This is how everything happens:
 
 5. The returned answer is sent back to the chat 
 
-#### Linking Messenger to the wit
+### Linking Messenger to the wit.ai app
 
 To do that, make sure to check out this [video](https://vimeo.com/427865122) made by Facebook, it shows how to link Messenger with wit.ai using a simple node server hosted on [Glitch](https://glitch.com/).
+
+### Handling intents
 
 The following in this tutorial is based on the same code by Facebook used in the video, here is the link to the [code](https://glitch.com/edit/#!/cotton-mysterious-package), you can remix it and start coding your own methods for your intents. 
 
