@@ -1,5 +1,5 @@
 # Create a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API
-### Authors: Mohamed Moumou & Ouissal Moumou\
+### Authors: Mohamed Moumou & Ouissal Moumou <br>
 
 ### Abstract
 
@@ -7,15 +7,16 @@ In this tutorial, we will create a Messenger bot for a company that sells T-shir
 
 ### Table of contents
   1. [Prerequites](#Prerequites)
-  2. [What is wit.ai and how does it Work](#What-is-witai-and-how-does-it-Work)
+  2. [What is wit.ai?](#What-is-witai)
   3. [What is the Facebook Marketing API](#What-is-the-Facebook-Marketing-API)
   4. [Getting Started: Creating a wit.ai App](#Getting-Started-Creating-a-witai-App)
-  5. [Training the bot](#Training-the-bot)
-  6. [Response of The Bot](#Response-of-The-Bot)
-  7. [Linking Messenger to the wit.ai app](#Linking-Messenger-to-the-witai-app)
-  8. [Handling intents](#Handling-intents)
-  9. [Next Steps](#Next-Steps)
-  10. [Resources](#Resources)
+  5. [How does Wit.ai work?](#How-does-Witai-work)
+  6. [Training the bot](#Training-the-bot)
+  7. [Response of The Bot](#Response-of-The-Bot)
+  8. [Linking Messenger to the wit.ai app](#Linking-Messenger-to-the-witai-app)
+  9. [Handling intents](#Handling-intents)
+  10. [Next Steps](#Next-Steps)
+  11. [Resources](#Resources)
 
 ### Prerequites
 
@@ -24,21 +25,10 @@ In this tutorial, we will create a Messenger bot for a company that sells T-shir
   - You have an E-commerce platform.
 
 
-### What is wit.ai and how does it Work? 
+### What is wit.ai?
 
 Wit.ai is an open and extensible NLP engine for developers, which allows building conversational applications and devices that you can talk or text to. It provides an easy interface and quick learning APIs to understand human communication from every interaction and helps to parse the complex message (which can be either voice or text) into structured data. 
 
-Wit.ai training process depends on three key elements: 
-
-- **Utterances**: the questions or the statements that a user usually asks. Utterances represent the user's end. It can be an action that a user wants to do, or a piece of information that the user wants to know. 
-
-![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/utterances_eng.png?raw=true)
-- **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
-
-![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/intents_eng.png?raw=true)
-- **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
-
-![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/entities_eng.png?raw=true)
 ### What is the Facebook Marketing API
 
  The **Facebook Marketing API** is an HTTP-based API that you can use to programmatically query data, create and manage ads, and perform a wide variety of other tasks. 
@@ -60,6 +50,20 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
    ![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/create_app.png?raw=true)
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
+
+### How does Wit.ai work?
+
+Wit.ai training process depends on three key elements: 
+
+- **Utterances**: the questions or the statements that a user usually asks. Utterances represent the user's end. It can be an action that a user wants to do, or a piece of information that the user wants to know. 
+
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/utterances_eng.png?raw=true)
+- **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
+
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/intents_eng.png?raw=true)
+- **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
+
+![alt text](https://github.com/MohamedMOUMOU/customerservicebot_images/blob/main/entities_eng.png?raw=true)
 
 ### Training the bot
 
