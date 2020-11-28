@@ -43,11 +43,12 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
   1. Go to https://wit.ai/ and login with Facebook or GitHub.
 
   ![alt text](images/witai_login.png)
-  2. Click the new "app" button at the top right corner of the screen. 
-        3. Choose a name for your app and also the language you will use to train the bot. 
-            4. Click "create".
 
-   ![alt text](images/create_app.gif)
+  2. Click the new "app" button at the top right corner of the screen. 
+  3. Choose a name for your app and also the language you will use to train the bot. 
+  4. Click "create".
+
+  ![alt text](images/create_app.gif)
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
 
