@@ -59,9 +59,11 @@ Wit.ai training process depends on three key elements:
 - **Utterances**: the questions or the statements that a user usually asks. Utterances represent the user's end. It can be an action that a user wants to do, or a piece of information that the user wants to know. 
 
 ![alt text](images/utterances.png)
+
 - **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
 
 ![alt text](images/intents.png)
+
 - **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
 
 ![alt text](images/entities.png)
@@ -72,7 +74,8 @@ To train the bot we need to get it familiarized with the questions that users mi
 
 Under "understanding", we can type the questions that users might ask in the text area that says type your utterance. To specify the intent for the question, you can add it in the intent text area under utterance. Note that after training the bot with some questions, the intent area will be filled automatically. Therefore, you need to check if the prediction made by Wit.ai is correct. Under the "intent" attribute, you can find the list of entities. To add an entity to the list you need to highlight the keyword that expresses the entity and either select the appropriate entity from the list of entities previously created or add one if it does not exist. As intents, along the way entities will be detected automatically by Wit.ai. After finishing these steps, you can click on "train" and "validate". 
 
-![alt text](images/live_utterance.gif)
+![alt text](images/live_utterance.gif) <br>
+
 In this tutorial, we will introduce the case of a t-shirts company that wants to create a chatbot to provide the best support for its customers. 
 
 The bot in this tutorial will deal with three intents that the customer might include in her question. 
