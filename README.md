@@ -4,7 +4,7 @@
 In this tutorial, we will create a Messenger bot for a company that sells T-shirts. The bot answers customers’ questions about the available products, the sizes, colors, and prices.  To do that, The bot relies on the company's Facebook catalog. 
 
 ### Table of contents:
-  - [Pre-requites](Prerequites)
+  - [Prerequites](Prerequites)
   - [What is wit.ai and how does it Work](#What-is-witai-and-how-does-it-Work)
   - [What is the Facebook Marketing API](#What-is-the-Facebook-Marketing-API)
   - [Getting Started: Creating a wit.ai App](#Getting-Started-Creating-a-witai-App)
@@ -15,7 +15,7 @@ In this tutorial, we will create a Messenger bot for a company that sells T-shir
   - [Next Steps](#Next-Steps)
   - [Resources](#Resources)
 
-### Pre-requites
+### Prerequites
 
   - You have a Facebook catalog for your products linked to a Facebook business account.
   - You have basic knowledge of NodeJS.
