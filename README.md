@@ -1,16 +1,16 @@
-# Crete a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API
+# Create a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API
 ### Authors: Mohamed Moumou & Ouissal Moumou<br>
 
 In this tutorial, we will create a Messenger bot for a company that sells T-shirts. The bot answers customers’ questions about the available products, the sizes, colors, and prices.  To do that, The bot relies on the company's Facebook catalog. 
 
 ### Table of contents:
-  - [Pre-requites](Pre-requites)
-  - [What is wit.ai and how does it Work](#What-is-wit.ai-and-how-does-it-Work)
+  - [Pre-requites](Prerequites)
+  - [What is wit.ai and how does it Work](#What-is-witai-and-how-does-it-Work)
   - [What is the Facebook Marketing API](#What-is-the-Facebook-Marketing-API)
-  - [Getting Started: Creating a wit.ai App](#Getting-Started:-Creating-a-wit.ai-App)
+  - [Getting Started: Creating a wit.ai App](#Getting-Started-Creating-a-witai-App)
   - [Training the bot](#Training-the-bot)
   - [Response of The Bot](#Response-of-The-Bot)
-  - [Linking Messenger to the wit.ai app](#Linking-Messenger-to-the-wit.ai-app)
+  - [Linking Messenger to the wit.ai app](#Linking-Messenger-to-the-witai-app)
   - [Handling intents](#Handling-intents)
   - [Next Steps](#Next-Steps)
   - [Resources](#Resources)
