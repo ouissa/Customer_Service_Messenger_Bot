@@ -61,10 +61,10 @@ Wit.ai training process depends on three key elements:
 ![alt text](images/utterances.png)
 - **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
 
-![alt text](images/intents)
+![alt text](images/intents.png)
 - **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
 
-![alt text](images/entities)
+![alt text](images/entities.png)
 
 ### Training the bot
 
