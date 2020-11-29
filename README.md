@@ -42,14 +42,14 @@ To use the Marketing API, you should have basic knowledge of the Facebook Grah A
 Before we can train the bot, we need to create a new Wit.ai app that will represent the natural language processing part of the project. 
   1. Go to https://wit.ai/ and login with Facebook or GitHub.
 
-  <div style="text-align:center">![alt text](images/witai_login.png)</div>
+  ![alt text](images/witai_login.png)
   ###### Figure 1. Wit.ai login page
 
   2. Click the new "app" button at the top right corner of the screen. 
   3. Choose a name for your app and also the language you will use to train the bot. 
   4. Click "create".
 
-  ![alt text](images/create_app.gif)
+  <div style="text-align:center"><img src="images/create_app.gif" /></div>
   ###### Figure 2. Create an app using Wit.ai
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
