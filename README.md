@@ -1,5 +1,6 @@
 # Create a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API
-### Authors: Mohamed Moumou & Ouissal Moumou <br>
+### Authors: Mohamed Moumou & Ouissal Moumou
+<hr>
 
 ### Abstract
 
@@ -145,13 +146,9 @@ To do that we will have to create an API that will link the wit.ai app (containi
 This is how everything happens:  
 
 1. A user asks a question in Messenger 
-
 2. The node application listens and receives the message 
-
 3. Wit.ai detects the intent of the message 
-
 4. The application matches then intent with the appropriate function and returns the appropriate message 
-
 5. The returned answer is sent back to the chat 
 
 ### Linking Messenger to the wit.ai app
@@ -314,5 +311,5 @@ What we have built was a simple application that only answers some intents with 
 [Facebook Tutorial on how to build a messenger bot and link it with wit.ai](https://vimeo.com/427865122)
 
 
-License
-----
+###License
+This repository is licensed under MIT license.
