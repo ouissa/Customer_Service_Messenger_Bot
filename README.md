@@ -49,7 +49,7 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
   3. Choose a name for your app and also the language you will use to train the bot. 
   4. Click "create".
 
-  <div style="text-align:center"><img src="images/create_app.gif" /></div>
+  ![alt text](images/create_app.gif)
   ###### Figure 2. Create an app using Wit.ai
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
@@ -61,23 +61,23 @@ Wit.ai training process depends on three key elements:
 - **Utterances**: the questions or the statements that a user usually asks. Utterances represent the user's end. It can be an action that a user wants to do, or a piece of information that the user wants to know. 
 
   ![alt text](images/utterances.png)
-  ###### Figure 3. 
+  ###### Figure 3. Utterances in Wit.ai
 
 - **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
 
-![alt text](images/intents.png)
+  ![alt text](images/intents.png)
+  ###### Figure 4. Intents in Wit.ai
 
 - **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
 
-![alt text](images/entities.png)
+  ![alt text](images/entities.png)
+  ###### Figure 5. Entities in Wit.ai
 
 ### Training the bot
 
 To train the bot we need to get it familiarized with the questions that users might ask. 
 
 Under "understanding", we can type the questions that users might ask in the text area that says type your utterance. To specify the intent for the question, you can add it in the intent text area under utterance. Note that after training the bot with some questions, the intent area will be filled automatically. Therefore, you need to check if the prediction made by Wit.ai is correct. Under the "intent" attribute, you can find the list of entities. To add an entity to the list you need to highlight the keyword that expresses the entity and either select the appropriate entity from the list of entities previously created or add one if it does not exist. As intents, along the way entities will be detected automatically by Wit.ai. After finishing these steps, you can click on "train" and "validate". 
-
-![alt text](images/live_utterance.gif) <br>
 
 In this tutorial, we will introduce the case of a t-shirts company that wants to create a chatbot to provide the best support for its customers. 
 
@@ -113,6 +113,10 @@ To ensure the best performance of the bot, the more the utterances the better. F
 
 As you can notice in the second example, wit comes with some predefined entities such as wit/amount_of_money. These entities come very handful in cases such as prices, distances, or measurable quantities as they provide us with precise detection of the information needed. 
 
+  ![alt text](images/asking_for_avialabilty_utterance.gif) 
+  ###### Figure 6. example of asking for avilability intent
+  <br>
+
 #### Asking for price: 
 
 For this intent we can have questions similar to the following: 
@@ -129,6 +133,10 @@ For this intent we can have question similar to the following:
 - What are the methods of payment? (**Entities**: payment: “what are the methods of payment”); 
 
 - Can I pay for a blue Facebook t-shirt using a master card? (**Entities**: payment: “Can I pay”, method_of_payment: “master card”, t-shirt_title: “blue Facebook t-shirt”); 
+
+  ![alt text](images/asking_for_price_utterance.gif) 
+  ###### Figure 6. example of asking for price intent
+  <br>
 
 ### Response of The Bot
 
@@ -147,6 +155,10 @@ This is how everything happens:
 4. The application matches then intent with the appropriate function and returns the appropriate message 
 
 5. The returned answer is sent back to the chat 
+
+  ![alt text](images/asking_for_methods_of_payment_utterance.gif) 
+  ###### Figure 6. example of asking for methods of payment intent
+  <br>
 
 ### Linking Messenger to the wit.ai app
 
