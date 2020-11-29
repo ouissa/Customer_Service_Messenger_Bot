@@ -1,5 +1,5 @@
-Create a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API
-### Authors: Mohamed Moumou & Ouissal Moumou
+<h1>Create a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API</h1>
+<h3>Authors: Mohamed Moumou & Ouissal Moumou</h3>
 <hr>
 
 ### Abstract
@@ -18,6 +18,7 @@ In this tutorial, we will create a Messenger bot for a company that sells T-shir
   9. [Handling intents](#Handling-intents)
   10. [Next Steps](#Next-Steps)
   11. [Resources](#Resources)
+  12. [License](#License)
 
 ### Prerequites
 
