@@ -113,8 +113,7 @@ To ensure the best performance of the bot, the more the utterances the better. F
 
 As you can notice in the second example, wit comes with some predefined entities such as wit/amount_of_money. These entities come very handful in cases such as prices, distances, or measurable quantities as they provide us with precise detection of the information needed. 
 
-<p align="center">^<img src="images/asking_for_avialabilty_utterance.gif"></p> 
-###### Figure 6. example of asking for avilability intent
+<p align="center"><img src="images/asking_for_avialabilty_utterance.gif"><h6>Figure 6. example of asking for avilability intent</h6></p>
 
 #### Asking for price: 
 
