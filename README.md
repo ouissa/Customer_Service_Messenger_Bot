@@ -310,6 +310,6 @@ What we have built was a simple application that only answers some intents with 
 
 [Facebook Tutorial on how to build a messenger bot and link it with wit.ai](https://vimeo.com/427865122)
 
+### License
 
-###License
 This repository is licensed under MIT license.
