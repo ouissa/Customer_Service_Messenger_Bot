@@ -1,5 +1,5 @@
 <h1>Create a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API</h1>
-<h3>Authors: Mohamed Moumou & Ouissal Moumou</h3>
+<h3>Authors: Ouissal & Mohamed Moumou</h3>
 <hr>
 
 ### Abstract
