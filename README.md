@@ -115,7 +115,6 @@ As you can notice in the second example, wit comes with some predefined entities
 
   ![alt text](images/asking_for_avialabilty_utterance.gif) 
   ###### Figure 6. example of asking for avilability intent
-  <br>
 
 #### Asking for price: 
 
@@ -123,7 +122,11 @@ For this intent we can have questions similar to the following:
 
 -  What is the price of a blue Facebook t-shirt? (**Entities**: asking_price: “what is the price”, t-shirt_title: “blue Facebook t-shirt”). 
 
-- How much a blue Facebook t-shirt cost? (**Entities**: asking_price: “how much”, t-shirt_title: “blue Facebook t-shirt” 
+- How much a blue Facebook t-shirt cost? (**Entities**: asking_price: “how much”, t-shirt_title: “blue Facebook t-shirt”
+
+![alt text](images/asking_for_price_utterance.gif) 
+###### Figure 6. example of asking for price intent
+
 #### Asking for methods of payment: 
 
 For this intent we can have question similar to the following: 
@@ -134,9 +137,8 @@ For this intent we can have question similar to the following:
 
 - Can I pay for a blue Facebook t-shirt using a master card? (**Entities**: payment: “Can I pay”, method_of_payment: “master card”, t-shirt_title: “blue Facebook t-shirt”); 
 
-  ![alt text](images/asking_for_price_utterance.gif) 
-  ###### Figure 6. example of asking for price intent
-  <br>
+![alt text](images/asking_for_methods_of_payment_utterance.gif) 
+###### Figure 6. example of asking for methods of payment intent
 
 ### Response of The Bot
 
@@ -155,10 +157,6 @@ This is how everything happens:
 4. The application matches then intent with the appropriate function and returns the appropriate message 
 
 5. The returned answer is sent back to the chat 
-
-  ![alt text](images/asking_for_methods_of_payment_utterance.gif) 
-  ###### Figure 6. example of asking for methods of payment intent
-  <br>
 
 ### Linking Messenger to the wit.ai app
 
