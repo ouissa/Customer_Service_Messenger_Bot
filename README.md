@@ -4,7 +4,11 @@
 
 ### Abstract
 
-In this tutorial, we will create a Messenger bot for a company that sells T-shirts. The bot answers customers’ questions about the available products, the sizes, colors, and prices.  To do that, The bot relies on the company's Facebook catalog. 
+This tutorial will walk you through the steps of building a messenger chatbot for a t-shits company. The chatbot will be able to answer different customer questions about availability, colors, sizes, and prices of t-shirts using the Facebook catalog. The flowchart below explains the whole process from the used-end to the app handling the responses.
+
+Flowchart image
+
+You can also watch this [walkthrough video](https://www.youtube.com/watch?v=i7cb0FveTfM) for a better understanding of the project.
 
 ### Table of contents
   1. [Prerequites](#Prerequites)
