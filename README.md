@@ -113,8 +113,8 @@ To ensure the best performance of the bot, the more the utterances the better. F
 
 As you can notice in the second example, wit comes with some predefined entities such as wit/amount_of_money. These entities come very handful in cases such as prices, distances, or measurable quantities as they provide us with precise detection of the information needed. 
 
-  ![alt text](images/asking_for_avialabilty_utterance.gif) 
-  ###### Figure 6. example of asking for avilability intent
+<p align="center">^<img src="images/asking_for_avialabilty_utterance.gif"></p> 
+###### Figure 6. example of asking for avilability intent
 
 #### Asking for price: 
 
@@ -125,7 +125,7 @@ For this intent we can have questions similar to the following:
 - How much a blue Facebook t-shirt cost? (**Entities**: asking_price: “how much”, t-shirt_title: “blue Facebook t-shirt”
 
 ![alt text](images/asking_for_price_utterance.gif) 
-###### Figure 6. example of asking for price intent
+###### Figure 7. example of asking for price intent
 
 #### Asking for methods of payment: 
 
@@ -138,7 +138,7 @@ For this intent we can have question similar to the following:
 - Can I pay for a blue Facebook t-shirt using a master card? (**Entities**: payment: “Can I pay”, method_of_payment: “master card”, t-shirt_title: “blue Facebook t-shirt”); 
 
 ![alt text](images/asking_for_methods_of_payment_utterance.gif) 
-###### Figure 6. example of asking for methods of payment intent
+###### Figure 8. example of asking for methods of payment intent
 
 ### Response of The Bot
 
