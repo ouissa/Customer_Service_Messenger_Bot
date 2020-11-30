@@ -55,7 +55,7 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
   3. Choose a name for your app and also the language you will use to train the bot. 
   4. Click "create".
 
-<p><img src="images/create_app.gif" width="80%"></p>
+<p align="center"><img src="images/create_app.gif" width="80%"></p>
 <h6 align="center">Figure 2. Create an app using Wit.ai</h6>
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
@@ -267,7 +267,7 @@ The response will include an array called data that includes all the products th
 
 Now our function for asking_for_price inmtent is ready, here is how it looks in the chat:
 
-<p align="center"><img src="images/demo.gif" width="100%"></p>
+<p align="center"><img src="images/demo.gif" width="50%"></p>
 <h6 align="center">Figure 9. Demo of the application</h6>
 
 
