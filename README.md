@@ -6,7 +6,8 @@
 
 This tutorial will walk you through the steps of building a messenger chatbot for a t-shits company. The chatbot will be able to answer different customer questions about availability, colors, sizes, and prices of t-shirts using the Facebook catalog. The flowchart below explains the whole process from the used-end to the app handling the responses.
 
-Flowchart image
+<p><img src="images/flowchart.png" width="100%"></p>
+<h6 align="center">Figure 1. Hight architecture of the application</h6>
 
 You can also watch this [walkthrough video](https://www.youtube.com/watch?v=i7cb0FveTfM) for a better understanding of the project.
 
@@ -49,14 +50,14 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
   1. Go to https://wit.ai/ and login with Facebook or GitHub.
 
 <p><img src="images/witai_login.png" width="100%"></p>
-<h6 align="center">Figure 1. Wit.ai login page</h6>
+<h6 align="center">Figure 2. Wit.ai login page</h6>
 
   2. Click the new "app" button at the top right corner of the screen. 
   3. Choose a name for your app and also the language you will use to train the bot. 
   4. Click "create".
 
 <p align="center"><img src="images/create_app.gif" width="80%"></p>
-<h6 align="center">Figure 2. Create an app using Wit.ai</h6>
+<h6 align="center">Figure 3. Create an app using Wit.ai</h6>
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
 
@@ -67,17 +68,17 @@ Wit.ai training process depends on three key elements:
 - **Utterances**: the questions or the statements that a user usually asks. Utterances represent the user's end. It can be an action that a user wants to do, or a piece of information that the user wants to know. 
 
   ![alt text](images/utterances.png)
-  <h6 align="center">Figure 3. Utterances in Wit.ai</h6>
+  <h6 align="center">Figure 4. Utterances in Wit.ai</h6>
 
 - **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
 
   ![alt text](images/intents.png)
-  <h6 align="center">Figure 4. Intents in Wit.ai</h6>
+  <h6 align="center">Figure 5. Intents in Wit.ai</h6>
 
 - **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
 
   ![alt text](images/entities.png)
-  <h6 align="center">Figure 5. Entities in Wit.ai</h6>
+  <h6 align="center">Figure 6. Entities in Wit.ai</h6>
 
 ### Training the bot
 
@@ -120,7 +121,7 @@ To ensure the best performance of the bot, the more the utterances the better. F
 As you can notice in the second example, wit comes with some predefined entities such as wit/amount_of_money. These entities come very handful in cases such as prices, distances, or measurable quantities as they provide us with precise detection of the information needed. 
 
 <p align="center"><img src="images/asking_for_avialabilty_utterance.gif" width="100%"></p>
-<h6 align="center">Figure 6. example of asking for avilability intent</h6>
+<h6 align="center">Figure 7. example of asking for avilability intent</h6>
 
 #### Asking for price: 
 
@@ -131,7 +132,7 @@ For this intent we can have questions similar to the following:
 - How much a blue Facebook t-shirt cost? (**Entities**: asking_price: “how much”, t-shirt_title: “blue Facebook t-shirt”
 
 <p align="center"><img src="images/asking_for_price_utterance.gif" width="100%"></p>
-<h6 align="center">Figure 7. example of asking for price intent</h6>
+<h6 align="center">Figure 8. example of asking for price intent</h6>
 
 #### Asking for methods of payment: 
 
@@ -144,7 +145,7 @@ For this intent we can have question similar to the following:
 - Can I pay for a blue Facebook t-shirt using a master card? (**Entities**: payment: “Can I pay”, method_of_payment: “master card”, t-shirt_title: “blue Facebook t-shirt”); 
 
 <p align="center"><img src="images/asking_for_methods_of_payment_utterance.gif" width="100%"></p>
-<h6 align="center">Figure 8. example of asking for methods of payment intent</h6>
+<h6 align="center">Figure 9. example of asking for methods of payment intent</h6>
 
 ### Response of The Bot
 
@@ -268,7 +269,7 @@ The response will include an array called data that includes all the products th
 Now our function for asking_for_price inmtent is ready, here is how it looks in the chat:
 
 <p align="center"><img src="images/demo.gif" width="50%"></p>
-<h6 align="center">Figure 9. Demo of the application</h6>
+<h6 align="center">Figure 10. Demo of the application</h6>
 
 
 Sometimes, we will need to combine multiple rules, for example in the case of asking for the availability of a product, a customer might ask about a t-shirt that has a specific price for a specific gender. In this case, we want to have multiple rules grouped together. Luckily, we have  the “or” and ”and” operators. So for this specific case, we will have to select all the products that have the price AND the gender asked by the user. 
