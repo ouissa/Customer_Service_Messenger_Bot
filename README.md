@@ -1,5 +1,5 @@
 <h1>Create a Customer Service Messenger Bot with wit.ai and the Facebook Marketing API</h1>
-<h3>Authors: Ouissal & Mohamed Moumou</h3>
+<h3>Authors: Ouissal Moumou & Mohamed Moumou</h3>
 <hr>
 
 ### Abstract
@@ -11,7 +11,7 @@ Flowchart image
 You can also watch this [walkthrough video](https://www.youtube.com/watch?v=i7cb0FveTfM) for a better understanding of the project.
 
 ### Table of contents
-  1. [Prerequites](#Prerequites)
+  1. [Prerequisites](#Prerequisites)
   2. [What is wit.ai?](#What-is-witai)
   3. [What is the Facebook Marketing API](#What-is-the-Facebook-Marketing-API)
   4. [Getting Started: Creating a wit.ai App](#Getting-Started-Creating-a-witai-App)
@@ -24,7 +24,7 @@ You can also watch this [walkthrough video](https://www.youtube.com/watch?v=i7cb
   11. [Resources](#Resources)
   12. [License](#License)
 
-### Prerequites
+### Prerequisites
 
   - You have a Facebook catalog for your products linked to a Facebook business account.
   - You have basic knowledge of NodeJS.
@@ -55,7 +55,8 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
   3. Choose a name for your app and also the language you will use to train the bot. 
   4. Click "create".
 
-<p align="center"><img src="images/create_app.gif" width="100%"><h6>Figure 2. Create an app using Wit.ai</h6></p>
+<p><img src="images/create_app.gif" width="100%"></p>
+<h6 align="center">Figure 2. Create an app using Wit.ai</h6>
 
 The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
 
@@ -263,7 +264,7 @@ The response will include an array called data that includes all the products th
 
 Now our function for asking_for_price inmtent is ready, here is how it looks in the chat:
 
-SCREENSHOT HERE: please include this question: what is the price of a Facebok t-shirt (dont add any color)
+<p align="center"><img src="images/demo.gif" width="100%"><h6>Figure 9. Demo of the application</h6></p>
 
 Sometimes, we will need to combine multiple rules, for example in the case of asking for the availability of a product, a customer might ask about a t-shirt that has a specific price for a specific gender. In this case, we want to have multiple rules grouped together. Luckily, we have  the “or” and ”and” operators. So for this specific case, we will have to select all the products that have the price AND the gender asked by the user. 
 
