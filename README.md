@@ -34,13 +34,14 @@ You can also watch this [walkthrough video](https://www.youtube.com/watch?v=i7cb
 
 ### What is wit.ai?
 
-"Wit.ai is an open and extensible NLP engine for developers, acquired by Facebook, which allows you to build conversational applications and devices that you can talk or text to. It provides an easy interface and quick learning APIs to understand human communication from every interaction and helps to parse the complex message (which can be either voice or text) into structured data. It also helps you with predicting the forthcoming set of events based on the learning from the gathered data." [[1]](#1).
+<blockquote>"Wit.ai is an open and extensible NLP engine for developers, acquired by Facebook, which allows you to build conversational applications and devices that you can talk or text to. It provides an easy interface and quick learning APIs to understand human communication from every interaction and helps to parse the complex message (which can be either voice or text) into structured data. It also helps you with predicting the forthcoming set of events based on the learning from the gathered data." [[1]](#1).
 
 ## References
 <a id="1">[1]</a> 
 Shetty, S. (2018, May 21). 
-<i>Facebook’s Wit.ai: Why we need yet another chatbot development framework?<i>. 
+<i>Facebook’s Wit.ai: Why we need yet another chatbot development framework?</i>. 
 packtpub.https://hub.packtpub.com/facebooks-wit-ai-why-we-need-yet-another-chatbot-development-framework/.
+</blockquote>
 
 ### What is the Facebook Marketing API
 
