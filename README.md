@@ -38,7 +38,6 @@ You can also watch this [walkthrough video](https://www.youtube.com/watch?v=i7cb
 <br />
 
 #### References
-<a id="1">[1]</a> 
 Shetty, S. (2018, May 21). 
 <i>Facebook’s Wit.ai: Why we need yet another chatbot development framework?</i>. 
 packtpub.https://hub.packtpub.com/facebooks-wit-ai-why-we-need-yet-another-chatbot-development-framework/.
