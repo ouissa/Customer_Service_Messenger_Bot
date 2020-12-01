@@ -4,7 +4,7 @@
 
 ### Abstract
 
-This tutorial will walk you through the steps of building a messenger chatbot for a t-shits company. The chatbot will be able to answer different customer questions about availability, colors, sizes, and prices of t-shirts using the Facebook catalog. The flowchart below explains the whole process from the used-end to the app handling the responses.
+This tutorial will walk you through the steps of building a messenger chatbot for a t-shits company. The chatbot will answer different customer questions about availability, colors, sizes, and prices of t-shirts that are available in the company's Facebook catalog. The flowchart below explains the whole process.
 
 <p><img src="images/flowchart.png" width="100%"></p>
 <h6 align="center">Figure 1. Hight architecture of the application</h6>
