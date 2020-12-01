@@ -59,7 +59,7 @@ Before we can train the bot, we need to create a new Wit.ai app that will repres
 <p align="center"><img src="images/create_app.gif" width="80%"></p>
 <h6 align="center">Figure 3. Create an app using Wit.ai</h6>
 
-The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, i.e. under "entities", you will find the list of entities that you created. 
+The first thing you will see after creating the app is a text area that says, “type your utterance”. In this area we will type the question that will train the bot. On the left side, you can see a menu that contains the pieces of our app, e.g. under "entities", you will find the list of entities that you created. 
 
 ### How does Wit.ai work?
 
@@ -70,12 +70,12 @@ Wit.ai training process depends on three key elements:
   ![alt text](images/utterances.png)
   <h6 align="center">Figure 4. Utterances in Wit.ai</h6>
 
-- **Intents**: an intent in wit.ai represents the purpose of asking a question, i.e. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
+- **Intents**: an intent in wit.ai represents the purpose of asking a question, e.g. the question “what is the price of a blue Facebook t-shirt” is of intent "asking for price". 
 
   ![alt text](images/intents.png)
   <h6 align="center">Figure 5. Intents in Wit.ai</h6>
 
-- **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be the entity "price" and it helps detect the intent of the question that is "asking for price"
+- **Entities**: constitute a very important part of the training process. Simply defined, entities are keywords in utterances that help identify the intent of the question. In the previous example, “what is the price” can be of entity "price". It also helps detect the intent of the question that is "asking for price"
 
   ![alt text](images/entities.png)
   <h6 align="center">Figure 6. Entities in Wit.ai</h6>
@@ -88,7 +88,7 @@ Under "understanding", we can type the questions that users might ask in the tex
 
 In this tutorial, we will introduce the case of a t-shirts company that wants to create a chatbot to provide the best support for its customers. 
 
-The bot in this tutorial will deal with three intents that the customer might include in her question. 
+The bot in this tutorial will deal with three intents that the customer might include in his/her question. 
 
 - Asking for availability 
 
