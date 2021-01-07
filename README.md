@@ -2,6 +2,8 @@
 <h3>Authors: Ouissal Moumou & Mohamed Moumou</h3>
 <hr>
 
+This project was submitted in the 2020 Facebook Developer Circles Community Challenge, and won the MENA region prize.
+
 ### Abstract
 
 This tutorial will walk you through the steps of building a messenger chatbot for a t-shits company. The chatbot will answer different customer questions about availability, colors, sizes, and prices of t-shirts that are available in the company's Facebook catalog. The flowchart below explains the whole process.
