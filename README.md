@@ -2,7 +2,7 @@
 <h3>Authors: Ouissal Moumou & Mohamed Moumou</h3>
 <hr>
 
-This project was submitted in the 2020 Facebook Developer Circles Community Challenge, and won the MENA region prize.
+**This project was submitted to the 2020 Facebook Developer Circles Community Challenge (begineers track), and won the MENA region prize.**
 
 ### Abstract
 
